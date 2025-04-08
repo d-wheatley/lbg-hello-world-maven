@@ -8,25 +8,25 @@ public class App
 {
     public static void main( String[] args )
     {
-        System.out.println(sayHello());
-        System.out.println(sayHelloToSomeone("Pikachu"));
-        System.out.println(sayHelloToSomeone("Gengar"));
-        System.out.println(sayHelloToSomeone("Psyduck"));
-        System.out.println(sayHelloToSomeone("Slowpoke"));
-        System.out.println(sayHelloToSomeone("Growlithe"));
-        System.out.println(sayHelloToSomeone("Charizard"));
-        System.out.println(sayGoodbye());
+        System.out.println(sayBattle());
+        System.out.println(sayPokemon("Pikachu"));
+        System.out.println(sayPokemon("Gengar"));
+        System.out.println(sayPokemon("Psyduck"));
+        System.out.println(sayPokemon("Slowpoke"));
+        System.out.println(sayPokemon("Growlithe"));
+        System.out.println(sayPokemon("Charizard"));
+        System.out.println(sayWinner());
     }
 
-    public static String sayHello(){
-        return "Hello World!";
+    public static String sayBattle(){
+        return "Hello Trainer.  Let's battle!";
     }
 
-    public static String sayGoodbye(){
-        return "Goodbye World!";
+    public static String sayWinner(){
+        return "I am the pokemon master!";
     }
 
-    public static String sayHelloToSomeone(String name){
+    public static String sayPokemon(String name){
         return "I Choose You ... " + name ;
     }
 }
